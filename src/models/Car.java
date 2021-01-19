@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Models;
+package models;
 /**
  *
  * @author uomo2
@@ -12,20 +12,18 @@ public class Car {
     //Atributes
     public int id;    
     public String license;
-    public String driver;
+    public Account name_Driver;
     public int passengers;
     
-    public Car(int id, String license, String driver, int passengers){
-        this.id = id;
+    public Car(String license, Account name_Driver){
         this.license = license;
-        this.driver = driver;
-        this.passengers = passengers;
+        this.name_Driver = name_Driver;
     }
-    
-    public void InfoDataCar(){
+    //Methods
+    public void print_Data_Car(){
         System.out.println("Id :" + id);
         System.out.println("license: " + license);
-        System.out.println("Driver: " + driver);
+        System.out.println("Driver: " + name_Driver);
         System.out.println("Number of passenger: " + passengers);
     }
     

@@ -53,7 +53,13 @@ public class Car{
     }
 
     public void setPassenger(Integer passenger) {
-        this.passenger = passenger;
+        
+        if(passenger == 4 || passenger ==7){
+            this.passenger = passenger;
+        } else {
+            System.out.println("Error, solo pueden ser 4 asientos o 7 en una SUV");
+        }
+        
     }
     
 }

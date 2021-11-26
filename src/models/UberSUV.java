@@ -10,5 +10,4 @@ public class UberSUV extends UberLuxury{
         super(typeCarAccepted, seatsMaterial);
     }
     
-
 }

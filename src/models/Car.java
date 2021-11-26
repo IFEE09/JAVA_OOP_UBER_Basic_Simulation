@@ -7,7 +7,7 @@ public class Car{
     private Integer id;
     private String license;
     private Account driver;
-    private Integer passenger;
+    public Integer passenger;
     
     //metodo constructor
     public Car(Integer id, String license, Account driver, Integer passenger) {
@@ -54,11 +54,12 @@ public class Car{
 
     public void setPassenger(Integer passenger) {
         
-        if(passenger == 4 || passenger ==7){
+        if(passenger == 4){
             this.passenger = passenger;
         } else {
             System.out.println("Error, solo pueden ser 4 asientos o 7 en una SUV");
         }
+        
         
     }
     
